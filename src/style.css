@@ -1,0 +1,142 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  --color-black: #1c1c1c;
+  --color-gray: #2e2e2e;
+  --color-green: #33ff81;
+  --color-pink: #ff7d7d;
+  --color-blue: #52d9ff;
+}
+
+body{
+  background-color: var(--color-black);
+  color: white;
+}
+
+.dashboard{
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.dashboard div {
+  width: 500px;
+}
+
+.users-followers{
+  overflow: auto;
+  height: 60vh;
+  text-align: center;
+}
+
+.users-followers::-webkit-scrollbar{
+  width: 7.5px;
+}
+
+.users-followers::-webkit-scrollbar-thumb{
+  background-color: var(--color-blue);
+}
+
+.table-followers {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-followers tbody tr:nth-child(even){
+  background-color: var(--color-gray);
+}
+
+.table-followers thead{
+  background-color: var(--color-green);
+  color: var(--color-black);
+  font-size: large;
+  font-weight: bolder;
+  position: sticky;
+  top: 0;
+}
+
+.table-followers td {
+  padding: 15px 0;
+}
+
+
+.input-user {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-green);
+  color: white;
+  font-size: large;
+  padding: 10px;
+}
+
+.input-user:hover{
+  border-color: var(--color-blue);
+}
+
+.input-user:focus{
+  border-color: var(--color-blue);
+}
+
+.form-user {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  margin: 0 auto;
+  
+}
+
+.input-send-user{
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid var(--color-blue);
+  color: var(--color-blue);
+  font-weight: bolder;
+  font-size: larger;
+  transition: .2s;
+}
+
+.input-send-user:hover{
+  background-color: var(--color-blue);
+  color: var(--color-black);
+}
+
+.loading{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.link-twitch-username{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.title{
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px 60px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  background-color: #5e00bd;
+}
