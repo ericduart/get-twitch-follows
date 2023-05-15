@@ -1,6 +1,6 @@
-const TWITCH_CLIENT_ID = 'ox3m7d9n4crc6au1j4402kc05j2651'
-const LOGIN_REDIRECT_URL = 'http://localhost:5173'
-const TWITCH_STATE = 'c3ab8aa609ea11e793ae92361f002671'
+const TWITCH_CLIENT_ID = import.meta.env.VITE_TWITCH_CLIENT_ID
+const LOGIN_REDIRECT_URL = import.meta.env.VITE_LOGIN_REDIRECT_URL
+const TWITCH_STATE = import.meta.env.VITE_TWITCH_STATE
 
 export {
   TWITCH_CLIENT_ID,
